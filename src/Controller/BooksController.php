@@ -146,7 +146,7 @@ class BooksController extends AbstractController
         return $this->json([$data]);
     }
 
-    #[Route('books/author/{name}', name: 'show_author' , methods: ['get'])]
+    #[Route('books/author/{name}', name: 'show_author_books' , methods: ['get'])]
     public function showAuthorBooks(ManagerRegistry $doctrine, string $name): JsonResponse
     {
         $author= $doctrine->getRepository(Author::class)->findOneBy(array('name' => $name));
