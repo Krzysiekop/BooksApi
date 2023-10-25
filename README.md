@@ -4,6 +4,7 @@
 *  Add a connection to your own database in the file .env:  ```DATABASE_URL=mysql://db_user:db_password@127.0.0.1:3306/db_name```
 *  Run ``` composer install ```
 *  Run Doctrine migrations: ```php bin/console d:m:m ```
+* Add dummy data to database
 * Use Postman or other application to test api
 # Endpoints:
 
